@@ -50,14 +50,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<!-- <link rel="stylesheet" href="/wp-content/themes/generatepress/landing2/css/style-top.css" media="all">
+<link rel="stylesheet" href="/wp-content/themes/generatepress/landing2/css/style-top.css" media="all">
 <link rel="stylesheet" href="/wp-content/themes/generatepress/landing2/css/mod/jquery.fancybox.min.css" media="all">
 <link rel="stylesheet" href="/wp-content/themes/generatepress/landing2/css/mod/slick.css" media="all">
-<link rel="stylesheet" href="/wp-content/themes/generatepress/landing2/css/style.css" media="all"> -->
-<link rel="stylesheet" href="css/style-top.css" media="all">
-<link rel="stylesheet" href="css/mod/jquery.fancybox.min.css" media="all">
-<link rel="stylesheet" href="css/mod/slick.css" media="all">
-<link rel="stylesheet" href="css/style.css" media="all">
+<link rel="stylesheet" href="/wp-content/themes/generatepress/landing2/css/style.css" media="all">
+
 
 <div id="page-container" class="et_fixed_nav">
 	<header id="main-header" data-height-onload="50">
@@ -126,8 +123,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</div>
 						<div class="banner-doc-image grid-item-3">
 							<div class="banner-doc-image__inner">
-								<!-- <img data-no-lazy="1" src="/wp-content/themes/generatepress/landing2/images/banner-doc-image-3.jpg" alt=""> -->
-								<img data-no-lazy="1" src="images/banner-doc-image-3.jpg" alt="">
+								<img data-no-lazy="1" src="/wp-content/themes/generatepress/landing2/images/banner-doc-image-3.jpg" alt="">
 							</div>
 						</div>
 					</div>
@@ -1200,14 +1196,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<!-- Popups> -->
 
 <!-- <Main scripts -->
-<!-- <script src="/wp-content/themes/generatepress/landing2/js/jquery-2.0.3.min.js"></script>
+<script src="/wp-content/themes/generatepress/landing2/js/jquery-2.0.3.min.js"></script>
 <script src="/wp-content/themes/generatepress/landing2/js/jquery.fancybox.min.js"></script>
 <script src="/wp-content/themes/generatepress/landing2/js/slick.min.js"></script>
-<script src="/wp-content/themes/generatepress/landing2/js/scripts.js"></script> -->
-<script src="js/jquery-2.0.3.min.js"></script>
-<script src="js/jquery.fancybox.min.js"></script>
-<script src="js/slick.min.js"></script>
-<script src="js/scripts.js"></script>
+<script src="/wp-content/themes/generatepress/landing2/js/scripts.js"></script>
 <script type="text/javascript">
   /* <![CDATA[ */
   var wpcf7 = {"apiSettings":{"root":"https:\/\/harmony-live.ru\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};

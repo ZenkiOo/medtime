@@ -1264,19 +1264,6 @@ p.medium-width {
   }
 }
 @media (max-width: 890px) {
-  /* #top-menu {
-    flex-direction: column;
-    text-align: center;
-  }
-  #top-menu a {
-    padding: 4px 0;
-    display: block;
-  } */
-
-  /* .tel-head {
-    flex-direction: column;
-  } */
-
   .tel-head .popmake-obr-zvon {
     margin: 18px 0 0;
   }
@@ -1937,10 +1924,6 @@ span.wpcf7-not-valid-tip{
   .popup-wrapper .fancybox-slide,
 .popup-wrapper .fancybox-slide--html {
     padding: 0;
-    /*
-    display: flex;
-    align-items: flex-end;
-    */
   }
 
   .popup-image {
@@ -3552,14 +3535,9 @@ span.wpcf7-not-valid-tip{
   .footer-widget .et_pb_widget{
     float: none;
   }
-  /* .tel-head{
-    left: auto !important;
-    opacity: 0;
-    visibility: visible;
-  } */
+  
   #main-header{
     box-shadow: none;
-    /* top: 47px !important; */
   }
 }
 
