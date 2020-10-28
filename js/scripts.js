@@ -183,7 +183,7 @@ jQuery(document).ready(function($){
 
 	$("#top-menu > li a").click(function(){
 		var _href = $(this).attr("href");
-		
+
 		if(window.matchMedia('(max-width: 990px)').matches) {
 			$('#et-top-navigation').removeClass("open");
 			$("html, body").animate({scrollTop: $(_href).offset().top-50});
@@ -197,6 +197,7 @@ jQuery(document).ready(function($){
 	$('#burger').click(function(e){
 		e.preventDefault();
 		$('#et-top-navigation').toggleClass('open');
+		$('#burger').toggleClass('active');
 	});
 
 	$('.megakek-tab').click(function(e){
