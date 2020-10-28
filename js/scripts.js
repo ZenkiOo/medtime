@@ -180,12 +180,24 @@ jQuery(document).ready(function($){
 	    }
 	});
 
-  $("#top-menu > li:not(:first-child) a").click(function(){
-    var _href = $(this).attr("href");
-    $("html, body").animate({scrollTop: $(_href).offset().top-50});
-    return false;
-  });
 
+	$("#top-menu > li a").click(function(){
+		var _href = $(this).attr("href");
+		
+		if(window.matchMedia('(max-width: 990px)').matches) {
+			$('#et-top-navigation').removeClass("open");
+			$("html, body").animate({scrollTop: $(_href).offset().top-50});
+			return false;
+		} else {
+			$("html, body").animate({scrollTop: $(_href).offset().top-135});
+			return false;
+		}
+	});
+
+	$('#burger').click(function(e){
+		e.preventDefault();
+		$('#et-top-navigation').toggleClass('open');
+	});
 
 	$('.megakek-tab').click(function(e){
 		e.preventDefault();
