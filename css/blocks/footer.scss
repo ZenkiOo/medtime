@@ -1,0 +1,46 @@
+.footer-wrapper{
+	padding: 64px 0;
+	background: $second-bg-color;
+}
+.footer{}
+.footer-button{
+	display: flex;
+	flex-direction: column;
+
+	& .icon{
+		margin-bottom: 16px;
+
+		& svg{
+			display: block;
+		}
+	}
+	& .title{
+		margin-bottom: 8px;
+		@extend %fourth-title;
+	}
+	& .text{
+		color: $second-font-color;
+		@extend %subtext14;
+	}
+}
+
+
+@media (max-width: 1100px){
+	.footer-wrapper{
+		padding: 20px 0 100px;
+	}
+	.footer-button{
+		margin-top: 80px;
+	}
+}
+@media (max-width: 680px){
+	.footer-button{
+		margin-top: 46px;
+		text-align: center;
+		align-items: center;
+
+		& .title{
+			font-size: $mobtitle;
+		}
+	}
+}

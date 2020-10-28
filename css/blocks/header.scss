@@ -1,0 +1,145 @@
+.header-wrapper{
+	padding: 25px 0 21px;
+}
+.header{
+	display: flex;
+	justify-content: space-between;
+}
+.header-box{
+	margin-left: 40px;
+	min-width: 0;
+
+	& .button{
+		margin: 5px 0 5px 6px;
+	}
+	&:first-child{
+		margin-left: 0;
+	    margin-right: 4.8%;
+	}
+}
+.header-logo{
+	display: flex;
+	width: 290px;
+}
+.header-logo-image{
+	margin-right: 16px;
+
+	& svg{
+		display: block;
+	}
+}
+.header-logo-text{
+	flex-basis: 100%;
+	color: $second-font-color;
+	@extend %subtext14;
+}
+.header-logo-title{
+    display: block;
+    margin-bottom: 6px;
+    color: #0B93F0;
+    font-size: 22px;
+    line-height: 100%;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 2px 0 0;
+}
+.header-phone-wrapper{
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 100%;
+
+	& .phone{
+		display: block;
+		white-space: nowrap;
+		padding: 2px 0 6px;
+	}
+	& .text{
+		display: block;
+		color: $second-font-color;
+		@extend %subtext14;
+	}
+}
+
+
+@media (max-width: 1264px){
+	.header-wrapper{
+		padding: 16px 0;
+	}
+	.header{
+		flex-wrap: wrap;
+	}
+	.header-box{
+		margin-left: 28px;
+
+		&:first-child{
+			margin-right: auto;
+		}
+		&:last-child{
+			flex-basis: 100%;
+			margin: 24px 0 0;
+		}
+
+		& .button{
+			margin: 0;
+			width: 100%;
+		}
+	}
+}
+@media (max-width: 860px){
+	.header-logo{
+		max-width: 220px;
+    	width: auto;
+	}
+	.header-logo-image{
+		& svg{
+			width: 46px;
+			height: 46px;
+		}
+	}
+	.header-logo-title{
+		font-size: 16px;
+		line-height: 100%;
+		padding-top: 1px;
+	}
+	.header-phone-wrapper{
+		font-size: 16px;
+		line-height: 100%;
+
+		& .phone{
+			padding-top: 1px;
+		}
+	}
+	.header-phone-wrapper .text,
+	.header-logo-text{
+		font-size: 10px;
+		line-height: 110%;
+	}
+}
+@media (max-width: 680px){
+	.header{
+	    justify-content: flex-end;
+	}
+	.header-box{
+		flex-basis: 100%;
+		margin: 0;
+
+		&:nth-child(1){
+			height: 0;
+		}
+		&:nth-child(2),
+		&:nth-child(3){
+			display: flex;
+			justify-content: flex-end;
+		}
+		&:nth-child(3){
+			margin-top: 19px;
+		}
+	}
+	.header-logo{
+		flex-direction: column;
+		max-width: 160px;
+	}
+	.header-logo-image{
+		margin: 0 0 7px;
+	}
+}

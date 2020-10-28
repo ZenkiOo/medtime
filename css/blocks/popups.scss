@@ -1,0 +1,193 @@
+.popup-wrapper{
+	position: relative;
+    z-index: 6666666;
+}
+.popup-wrapper .fancybox-bg{
+  	background: rgba(10, 51, 71, 0);
+}
+.fancybox-is-open .fancybox-bg{
+  	background: rgba(10, 51, 71, 0.45);
+}
+.popup{
+    display: none;
+    background: #F1F8FD;
+    box-shadow: 0px 4px 28px rgba(3, 154, 229, 0.05);
+    border-radius: 8px;
+    z-index: 666;
+    max-width: 424px;
+    width: 100%;
+    padding: 40px 32px;
+    overflow: visible;
+}
+.popup .fancybox-button.fancybox-close-small{
+  	display: none;
+}
+.popup-close{
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.popup-close svg{
+  	fill: #fff;
+  	display: block;
+}
+.popup-close circle{
+  	fill: #ccc;
+}
+.popup .title{
+    margin-bottom: 25px;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 120%;
+    color: #43656F;
+}
+.popup p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: #779FAC;
+}
+.popup .form{}
+.popup .title ~ .wpcf7,
+.popup .title ~ .form,
+.popup p ~ .form{
+  	margin-top: 42px;
+}
+.popup .list-dot{}
+.popup-footer{
+	margin: 40px 0 -40px;
+    display: flex;
+    flex-wrap: wrap;
+  	justify-content: space-between;
+}
+.popup-footer-button{
+	background: #FFF;
+    box-shadow: 0px 4px 28px rgba(3, 154, 229, 0.05);
+    border-radius: 8px;
+  	text-align: center;
+  	flex-basis: 47.8%;
+  	margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  	min-height: 52px;
+  	transition: all .1s ease-in-out;
+}
+.popup-footer-button.big{
+	border-bottom-right-radius: 0;
+  	border-bottom-left-radius: 0;
+  	padding: 19px 24px 24px;
+  	flex-basis: 100%;
+  	flex-direction: column;
+}
+.popup-footer-button:last-child{
+	margin-bottom: 0;
+}
+.popup-footer-button:hover .phone,
+.popup-footer-button:hover .popup-footer-button-text,
+.popup-footer-button:hover{
+	color: #0797F0;
+  	box-shadow: none;
+}
+.popup-footer-button-text{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 130%;
+    color: #43656F;
+  	margin-left: 8px;
+	transition: all .1s ease-in-out;
+}
+.popup-footer .phone{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 140%;
+    color: #43656F;
+	transition: all .1s ease-in-out;
+}
+.popup-footer .phone svg{
+	margin: 0 11px -2px 0;
+}
+.popup-footer .phone-text{
+	margin: 0;
+  	display: block;
+  	font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    color: #779fac;
+}
+.popup-image{
+    float: right;
+    margin: 0 -16px 0 -20px;
+  	max-width: 160px;
+}
+
+/* Popup after message */
+.popup-wrapper .wpcf7-response-output.wpcf7-mail-sent-ok{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    left: 20px;
+    bottom: 0;
+    background: #f1f8fd;
+    opacity: 1;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0;
+  
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 120%;
+    text-align: center;
+    color: #43656F;
+}
+#popup-call-doctor .wpcf7-mail-sent-ok::after{
+    display: block;
+    margin-top: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160%;
+    content: 'Оператор свяжется с вами в течение нескольких минут, чтобы уточнить адрес и другие детали';
+    color: #43656F;
+}
+#popup-call-doctor .wpcf7-mail-sent-ok::before{
+    content: '';
+    background: url(/wp-content/assets/images/popup-done-2.svg) center no-repeat;
+    width: 72px;
+    height: 72px;
+    margin-bottom: 32px;
+}
+
+
+@media screen and (max-width: 420px){
+  .popup{
+      padding: 40px 16px 40px;
+      border-radius: 0;
+     
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      overflow: auto;
+      max-height: 100%;
+  }
+  .popup-wrapper .fancybox-slide,
+  .popup-wrapper .fancybox-slide--html{
+      padding: 0;
+      /*
+      display: flex;
+      align-items: flex-end;
+      */
+   }
+   .popup-image{
+  	  display: none;
+   }
+}
