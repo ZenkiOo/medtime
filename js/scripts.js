@@ -185,6 +185,7 @@ jQuery(document).ready(function($){
 		var _href = $(this).attr("href");
 
 		if(window.matchMedia('(max-width: 990px)').matches) {
+			$('#burger').removeClass('active');
 			$('#et-top-navigation').removeClass("open");
 			$("html, body").animate({scrollTop: $(_href).offset().top-50});
 			return false;
